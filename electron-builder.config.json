@@ -1,0 +1,30 @@
+{
+  "appId": "com.yourdoamnin.yourapp",
+  "directories": {
+    "buildResources": "resources",
+    "output": "output"
+  },
+  "files": [
+    "build/**/*",
+    "capacitor.config.*",
+    "app/**/*"
+  ],
+  "publish": {
+    "provider": "generic",
+    "url": "D:\\Projects\\poker-electron\\poker-electron\\output"
+  },
+  "nsis": {
+    "allowElevation": true,
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "./src/assets/icons/angular_icon.ico"
+  },
+  "mac": {
+    "category": "your.app.category.type",
+    "target": "dmg",
+    "icon": "./src/assets/icons/angular_icon_mac.ico"
+  }
+}
